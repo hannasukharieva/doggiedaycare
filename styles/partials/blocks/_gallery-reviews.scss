@@ -1,0 +1,95 @@
+.gallery-wrapper {
+  background-image: url(/images/background/amoeba4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .gallery {
+    max-width: 900px;
+    max-height: 500px;
+    background-color: $dogs-violet;
+    border-radius: 40px;
+    margin: -80px auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    color: $neutral-white;
+
+    &__selectors {
+      display: flex;
+      justify-content: space-between;
+      margin: 13px auto 73px auto;
+      
+      .selector-item {
+        display: inline-block;
+        border-bottom: 1px solid $light-gray;
+        padding: 0 50px;
+        font-size: $font-s;
+        line-height: 3em;
+
+        &--selected {
+          font-weight: bold;
+          border-bottom: 2px solid $light-gray;
+        }
+      }
+    }
+
+    &__image {
+      width: 846px;
+      height: 480px;
+      margin: auto;
+      @include boxShadow($shadow-gray, 90%);
+    }
+  }
+
+  .reviews {
+    width: $content-width;
+    margin: 300px auto 200px auto;
+    display: flex;
+
+    .reviews-text {
+      width: 320px;
+      margin: 0 30px 0 10px;
+
+      &__small-title {
+        color: $dogs-violet;
+      }
+  
+      &__big-text {
+        @include boldBigText;
+      }
+    }
+
+    .reviews-block {
+      width: 250px;
+      min-height: 200px;
+      border-radius: 20px;
+      background-color: $neutral-white;
+      margin-right: 20px;
+      padding: 50px;
+      @include flexColumn;
+      align-items: center;
+      font-size: $font-s;
+
+      &__text {
+        margin-bottom: 40px;
+      }
+
+      &__customer {
+        @include flexCenter;
+        align-self: flex-start;
+
+        .customer-image {
+          margin-right: 15px;
+        }
+
+        .customer-name {
+          font-weight: bold;
+          color: $dogs-peach;
+        }
+      }
+    }
+  }
+  
+  
+
+}

@@ -1,0 +1,60 @@
+// variables
+@import "partials/variables/colors";
+@import "partials/variables/fonts";
+@import "partials/variables/breakpoints";
+@import "partials/variables/mixins";
+
+//elements
+@import "partials/elements/buttons";
+@import "partials/elements/typography";
+
+// blocks
+@import "partials/blocks/main-section";
+@import "partials/blocks/intro";
+@import "partials/blocks/promise";
+@import "partials/blocks/illustration";
+@import "partials/blocks/services";
+@import "partials/blocks/appointment";
+@import "partials/blocks/gallery-reviews";
+@import "partials/blocks/impact";
+@import "partials/blocks/footer";
+
+
+
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $main-fontfamily;
+  width: 100vw;
+  background-color: $neutral-bggray;
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+textarea {
+  font-size: $font-s;
+  font-family: $main-fontfamily;
+}
+
+ul {
+  margin: 0px;
+}

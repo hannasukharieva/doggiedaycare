@@ -1,0 +1,89 @@
+.appointment-wrapper {
+  max-width: 1440px;
+  min-height: 780px;
+  background-image: url(/images/background/amoeba3.png), url(images/background/bg-circles), url(/images/background/violet-dogs-bg.png);
+  padding: 100px 150px;
+  background-repeat: no-repeat;
+
+  .appointment {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    max-width: $content-width;
+
+    &__form {
+      background-color: $dogs-violet;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-self: right;
+      border-radius: 20px;
+      min-width: 590px;
+      box-shadow: 0 16px 24px $shadow-gray;
+
+      .form-title {
+        color: $neutral-white;
+        margin-top: 76px;
+      }
+
+      .form-body {
+        // width: 470px;
+        &__top {
+          padding: 0px;
+          display: grid;
+          grid-template-rows: 50px 50px;
+          grid-template-columns: 250px 250px;
+          list-style: none;
+          grid-gap: 30px 20px;
+
+          input {
+            width: 240px;
+            height: 50px;
+            color: #fff;
+            font-size: $font-s;
+          }
+        }
+
+        &__bottom {
+          margin-top: 30px;
+          width: 510px;
+          height: 180px;
+          font-size: $font-s;
+          padding: 10px;
+        }
+
+        .input-field {
+          border-radius: 10px;
+          padding-left: 10px;
+          background-color: transparent;
+          border: 2px solid white;
+          opacity: 70%;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            color: white;
+          }
+        }
+      }
+
+      .appointment-button {
+        align-self: flex-end;
+        margin: 30px 45px 76px auto;
+        box-shadow: none;
+      }
+    }
+
+    &__text {
+      padding: 200px 50px 100px 100px;
+      font-weight: bold;
+      color: $neutral-white;
+      text-align: center;
+
+      p {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}

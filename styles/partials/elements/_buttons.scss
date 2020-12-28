@@ -1,0 +1,21 @@
+.appointment-button {
+  font-size: $font-xs;
+  font-weight: bold;
+  color: $neutral-white;
+  background-color: $dogs-peach;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 16px 24px $shadow-gray;
+  transition: 0.5s;
+  padding: 15px 30px;
+
+  &:hover {
+    background-image: linear-gradient(90deg, #DC4946,#F2726F,#FFC533);
+    border: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

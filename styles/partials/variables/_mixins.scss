@@ -1,0 +1,21 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@mixin boxShadow($color, $opacity) {
+  box-shadow: 15px $color $opacity;
+}
+
+@mixin boldBigText {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+}

@@ -1,0 +1,34 @@
+.promise {
+  max-width: $content-width;
+  margin: 86px auto;
+
+  &__title {
+    display: flex;
+    color: $dogs-violet;
+  }
+
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .promise-card {
+      display: flex;
+      max-width: 324px;
+
+      img {
+        margin-right: 23px;
+        align-self: flex-start;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+
+        .card-title {
+          color: $dogs-peach;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

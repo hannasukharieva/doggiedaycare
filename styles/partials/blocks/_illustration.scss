@@ -1,0 +1,33 @@
+.illustration {
+  background-color: $dogs-aqua;
+  background-image: url(/images/background/ball.svg), url(/images/background/ball-path.png);
+  background-repeat: no-repeat;
+  background-size: contain contain;
+  background-position-x: +1200px, +550px;
+  background-position-y: center;
+  height: 500px;
+  display: flex;
+
+  &__picture {
+    display: flex;
+    background-image: url(/images/background/amoeba2.svg), url(/images/background/circles.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 50%, 25%;
+    background-position: left top, left bottom, ;
+
+    img {
+      align-self: flex-end;
+    }
+  }
+
+  &__text {
+    padding: 70px;
+    
+  }
+
+  &__title {
+    color: $neutral-white;
+    max-width: 400px;
+  }
+}

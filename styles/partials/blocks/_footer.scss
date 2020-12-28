@@ -1,0 +1,115 @@
+.footer {
+  height: 400px;
+  margin: 300px auto 0 auto;
+  width: $content-width;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+
+  .footer-company {
+    width: 1fr;
+    max-width: 300px;
+    @include flexColumn;
+
+    &__text {
+      margin: 23px auto 33px auto;
+    }
+
+    &__icons {
+      justify-self: flex-start;
+
+      .contact-icon {
+        margin-right: 18px;
+      }
+    }
+  }
+
+  .footer-links {
+    width: 1fr;
+    min-width: 300px;
+    font-weight: bold;
+
+    &__list {
+      @include flexCenter;
+      margin-top: 20px;
+      
+      .link-items {
+        list-style: none;
+        padding-left: 0;
+        margin-right: 100px;
+
+        li {
+          margin-bottom: 12px;
+        }
+      }
+      
+    }
+  }
+
+  .footer-contact {
+    width: 1fr;
+
+    .contact-line {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__address {
+      margin-top: 20px;
+
+      &:before {
+        content:url('/images/icons/footer/list/place.png');
+        margin-right: 20px;
+      }
+    }
+
+    &__number {
+      margin-top: 20px;
+
+      &:before {
+        content:url('/images/icons/footer/list/smartphone.png');
+        margin-right: 20px;
+      }
+    }
+
+    &__mail {
+      margin-top: 20px;
+
+      &:before {
+        content:url('/images/icons/footer/list/email.png');
+        margin-right: 20px;
+      }
+    }
+
+    &__time {
+      margin-top: 20px;
+
+      &:before {
+        content:url('/images/icons/footer/list/timer.png');
+        margin-right: 20px;
+      }
+    }
+
+  }
+
+}
+
+.copywrite {
+  width: 100%;
+  height: 60px;
+  background-color: $dogs-violet;
+  @include flexCenter;
+  color: $neutral-white;
+
+  &__text {
+    width: $content-width;
+    @include flexCenter;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .copywrite-bold {
+      font-weight: bold;
+    }
+  }
+}

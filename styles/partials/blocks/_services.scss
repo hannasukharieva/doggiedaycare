@@ -1,0 +1,63 @@
+.services-wrapper {
+  padding-top: 100px;
+  width: 100vw;
+  background-image: url(/images/background/white-amoeba.png);
+  background-position-x: right;
+  background-position-y: -400px;
+  background-repeat: no-repeat;
+
+  .services {
+    max-width: $content-width;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  
+    &__title {
+      display: flex;
+    }
+  
+    &__header {
+      margin-bottom: 78px;
+    }
+  
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 324px 324px;
+      grid-gap: 24px;
+    }
+  
+    .services-card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: $neutral-white;
+      border-radius: 20px;
+      padding: 44px;
+      transition: box-shadow .5s;
+  
+      .card-title {
+        color: $dogs-peach;
+      }
+  
+      :nth-child(2) {
+        margin-top: 33px;
+      }
+  
+      :nth-child(3) {
+        margin-top: 20px;
+      }
+  
+      &:hover {
+        box-shadow: 0 16px 24px $shadow-gray;
+        cursor: pointer;
+      }
+    }
+  
+    &__button {
+      margin: 66px auto;
+      box-shadow: none;
+    }
+  }
+}
+

@@ -1,0 +1,77 @@
+.impact {
+  width: 100%;
+  height: 650px;
+  background-color: $dogs-aqua;
+  background-image: url(/images/background/amoeba5.png);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: right top;
+
+  .impact-title {
+    color: $neutral-white;
+    width: $content-width;
+    min-height: 400px;
+    display: flex;
+    margin: auto auto;
+
+
+    &__text {
+      max-width: 400px;
+      margin-top: 30px;
+      margin-right: 100px;
+    }
+
+    &__picture {
+      justify-self: flex-end;
+      margin-top: -50px;
+    }
+  }
+  
+  .impact-numbers {
+    @include flexCenter;
+    justify-content: space-between;
+    width: $content-width;
+    margin: 0 auto;
+
+    &__plate {
+      @include flexCenter;
+
+      .plate-image {
+        margin-right: 15px;
+      }
+
+      .plate-text {
+        @include flexColumn;
+        font-weight: bold;
+
+        &__title {
+          color: $neutral-white;
+        }
+
+        &__description {
+          color: $dogs-violet;
+        }
+      }
+    } 
+  }
+
+  .impact-appointment {
+    max-width: 880px;
+    height: 150px;
+    background-color: $dogs-violet;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px 70px;
+    @include flexCenter;
+    justify-content: space-between;
+
+    &__text {
+      max-width: 560px;
+      color: $neutral-white;
+    }
+
+    &__button {
+      box-shadow: none;
+    }
+  }
+}

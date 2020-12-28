@@ -1,0 +1,140 @@
+.main {
+  background-image: url(/images/background/BG_image.png);
+  width: 100%;
+  height: 800px;
+  max-height: 100vh;
+  
+  .hero{
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;  
+      padding: 26px 0;
+
+      &__logo {
+        display: flex;
+
+        .logo-text {
+          font-weight: 800;
+          color: $neutral-white;
+          margin: auto 10px;
+          font-size: 36px;
+          line-height: 48px;
+
+          @media screen and (max-width:475px){
+            font-size: 24px;
+          }
+        }
+      }
+
+      &__info {
+        display: flex;
+        justify-content: space-between;
+
+        .info-hours {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+
+          .hours-text {
+            padding: 0 10px;
+            color: $neutral-white;
+            font-size: $font-xs;
+            font-weight: bold;
+
+            .boarding-hours {
+              text-transform: uppercase;
+              margin: 0 0 10px 0;
+            }
+          }
+        }
+
+        .appointment-button {
+          margin-left: 30px;
+        }
+
+        .info-tel {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-left: 30px;
+
+          .tel-text {
+            padding: 0 10px;
+            color: $neutral-white;
+            font-size: $font-xs;
+            font-weight: bold;
+
+            .tel-title {
+              text-transform: uppercase;
+              margin: 0 0 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    width: 100%;
+    height: 60px;
+    background-color: $neutral-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-xs;
+    font-weight: bold;
+    border-radius: 10px;
+    
+    &__items {
+      display: flex;
+      justify-content: space-around;
+      
+      p {
+        padding-right: 37px;
+        
+        img {
+          margin-left: 5px;
+        }
+        &:first-child {
+          padding-left: 40px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__icons {
+      margin-right: 50px;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        img:hover {
+          cursor: pointer;
+        }
+  
+        img:first-child {
+          margin-right: 20px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: $font-xl;
+    color: $neutral-white;
+    margin-top: 126px;
+  }
+
+}
